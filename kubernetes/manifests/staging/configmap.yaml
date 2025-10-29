@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-config
+  namespace: staging
+data:
+  WELCOME_MSG: "Welcome to STAGING environment!"

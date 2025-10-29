@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-config
+  namespace: production
+data:
+  WELCOME_MSG: "Welcome to PRODUCTION environment!"
