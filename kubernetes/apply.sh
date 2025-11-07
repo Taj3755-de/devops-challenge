@@ -6,9 +6,9 @@ if [[ -z "$ENV" ]]; then
   exit 1
 fi
 if [[ ! -d "manifests/$ENV" ]]; then
-  echo "❌ Environment folder manifests/$ENV not found!"
+  echo "Environment folder manifests/$ENV not found!"
   exit 1
 fi
-echo "🚀 Deploying $ENV environment..."
+echo "Deploying $ENV environment..."
 kubectl apply -f manifests/$ENV/
-echo "✅ $ENV environment deployed successfully."
+echo "$ENV environment deployed successfully."
