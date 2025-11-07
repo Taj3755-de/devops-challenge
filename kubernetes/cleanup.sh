@@ -5,4 +5,4 @@ for ns in staging production; do
   echo "Deleting namespace: $ns"
   kubectl delete namespace $ns --ignore-not-found=true
 done
-echo "✅ Cleanup complete."
+echo "Cleanup complete."
